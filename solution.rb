@@ -4,7 +4,7 @@ get '/maker/:nombre' do
 	# params[:nombre] ? "Hola #{params[:nombre]}" : "Hola desconocido!"
 	if params[:nombre] && params[:nombre] != ""
 		<<-HTML
-			<h1 style="text-align: center;">¡Hola #{params[:nombre]}!</h1>
+			<h1 style="text-align: center;">¡Hola #{params[:nombre].capitalize}!</h1>
 		HTML
 	else
 		<<-HTML

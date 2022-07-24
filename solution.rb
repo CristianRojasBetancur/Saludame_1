@@ -1,6 +1,6 @@
 require 'sinatra'
 
-get '/maker/:nombre' do
+get '/makers/:nombre' do
 	# params[:nombre] ? "Hola #{params[:nombre]}" : "Hola desconocido!"
 	if params[:nombre] && params[:nombre] != ""
 		<<-HTML

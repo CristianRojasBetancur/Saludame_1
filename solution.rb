@@ -1,6 +1,6 @@
 require 'sinatra'
 
-get '/' do
+get '/makers/:nombre' do
 	
 	if params[:nombre] && params[:nombre] != ""
 		<<-HTML

@@ -1,12 +1,6 @@
 require 'sinatra'
 
 get '/' do
-  erb :index
-end
-
-post '/great' do
-  @name = params[:name]
-
-  erb :great
+  "HcUy6Re2LLBRtj"
 end
 

@@ -1,7 +1,7 @@
 require 'sinatra'
 
-get '/makers/:nombre' do
-	# params[:nombre] ? "Hola #{params[:nombre]}" : "Hola desconocido!"
+get '/' do
+	
 	if params[:nombre] && params[:nombre] != ""
 		<<-HTML
 			<h1 style="text-align: center;">¡Hola #{params[:nombre].capitalize}!</h1>

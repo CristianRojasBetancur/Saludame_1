@@ -1,6 +1,7 @@
 require 'sinatra'
+require 'sinatra/reloader' if development?
 
 get '/' do
-  "HcUy6Re2LLBRtj"
+  erb :index
 end
 
